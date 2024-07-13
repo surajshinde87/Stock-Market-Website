@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockBulls</title>
+    <link rel="shortcut icon" href="stockbull.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+        body{
+           background-color: aquamarine;
+           margin: 0;
+           padding: 0;
+        }
+        /* .background{
+            background:url(bg.jpg);
+            animation: ania 1s linear infinite;
+        }
+        @keyframes ania {
+            100%{
+                filter: hue-rotate(360deg);
+            }
+        } */
+        .card {background-color: darkslateblue;
+  height: 500px;
+  width: 40%;
+  border: 5px solid #ff0000;
+  margin: 65px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 10px;
+  float: left;
+    }
+    .image{
+  height: 350px;
+  margin: 15px;
+  border-radius: 30px 0px;
+  border: 5px solid aliceblue;
+  overflow: hidden;
+  box-shadow: -5px -4px 8px;
+    }
+    img{
+      
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       height: 355px;
+      width: 100%;  
+    }
+    h1{
+        color: white;
+  text-align: center;
+  margin: 0;
+  font-family: 'Paytone One', sans-serif;
+    }
+    button{
+        display: flex;
+  margin: auto;
+  padding: 3px 50px;
+  background-color: blue;
+  box-shadow: 0px 5px 8px;
+  border-radius: 10px;
+    }
+    button a{
+        font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  
+    }
+    @media (max-width: 400px) {
+        .card{
+            background-color: rgb(61, 119, 139);
+  height: 500px;
+width: 90%;
+  border: 5px solid #ffcb00;
+  margin: 30px auto;
+  border-radius: 30px;
+  box-shadow: 0px 2px 10px;
+        }
+    }
+    .coloumn{
+        margin-top: 50px;
+    }
+    nav{
+            display: flex;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 3px;
+        }
+        .logo-text{
+            display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: red;
+  
+        }
+        .logo2{
+            height: 70px;
+            filter: drop-shadow(2px 3px 2px green);
+            animation: logo 2s linear infinite ;
+        }
+        
+        @keyframes logo {
+            100%{
+                filter: hue-rotate(360deg);
+            }
+        }
+        ul{
+            display: flex;
+            font-size: 20px;
+  font-weight: 900;
+        }
+        ul li{
+            margin: 0px 50px;
+  list-style-type: none;
+        }
+       .search-div {
+            display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+        }
+        div input{
+            height: 30px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin: 0 10px;
+        }
+        .search-btn{
+            height: 35px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  background-color: blue;
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 class="logo-text">StockBulls <img src="stockbull.png" alt="" class="logo2"></h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Courses</li>
+            <li>Contact</li>
+        </ul>
+       <div class="search-div"> <input type="text" placeholder="search here">
+        <button class="search-btn">search</button></div>
+    </nav>
+  <div class="coloumn">
+   <div class="card">
+    <div class="image">
+        <img src="STOCK-MARKET-08.jpg" alt="">
+    </div>
+    <div class="caption">
+        <h1>STOCK MARKET</h1>
+        <button><a href="stockmarket.html">More Info</a></button>
+    </div>
+   </div>
+   
+   <div class="card">
+    <div class="image">
+      <img src="candleimage.jpg" alt="">  
+    </div>
+    <div class="caption">
+        <h1>CANDLESTICK</h1>
+        <button><a href="candlestick.html">More Info</a></button>
+    </div>
+   </div>
+   <div class="card">
+    <div class="image">
+        <img src="investimg.jpg" alt="">
+    </div>
+    <div class="caption">
+        <h1>INVESTMENT</h1>
+        <button><a href="investment.html">More Info</a></button>
+    </div>
+   </div>
+   <div class="card">
+    <div class="image">
+        <img src="commodityimg.jpg" alt="">
+    </div>
+    <div class="caption">
+        <h1>COMMODITY</h1>
+        <button><a href="commodity.html">More Info</a></button>
+    </div>
+   </div>
+   <div class="card">
+    <div class="image">
+        <img src="Demat-Accountimg.jpg" alt="">
+    </div>
+    <div class="caption">
+        <h1>DEMAT ACCOUNT</h1>
+        <button><a href="demat.html">More Info</a></button>
+    </div>
+   </div>
+   <div class="card">
+    <div class="image">
+        <img src="tradingacimg.jpg" alt="">
+    </div>
+    <div class="caption">
+        <h1>TRADING ACCOUNT</h1>
+        <button><a href="trading.html">More Info</a></button>
+    </div>
+   </div>
+   <div class="card">
+    <div class="image">
+        <img src="depositeryimg.jpeg" alt="">
+    </div>
+    <div class="caption">
+        <h1>DEPOSITORY</h1>
+        <button><a href="depository.html">More Info</a></button>
+    </div>
+   </div>
+   <div class="card">
+    <div class="image">
+        <img src="ipoimg.jpg" alt="">
+    </div>
+    <div class="caption">
+        <h1>IPO</h1>
+        <button><a href="ipo.html">More Info</a></button>
+    </div>
+   </div>
+   <div class="card">
+    <div class="image">
+       <img src="technicalanaimg.png" alt=""> 
+    </div>
+    <div class="caption">
+        <h1>TECHNICAL ANALYSIS</h1>
+        <button><a href="technical.html">More Info</a></button>
+    </div>
+   </div>
+   <div class="card">
+    <div class="image">
+       <img src="fundamentalanaimg.jpg" alt=""> 
+    </div>
+    <div class="caption">
+        <h1>FUNDAMENTAL ANALYSIS</h1>
+        <button><a href="fundamentel.html">More Info</a></button>
+    </div>
+   </div>
+</div>
+ 
+</body>
+</html>

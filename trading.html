@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Stockbulls.com</title>
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Young+Serif&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+    h1{
+        text-align: center;
+        font-family: 'Black Ops One', cursive;
+        border-bottom: 5px dashed blue;
+    }
+    strong{
+        font-size: 40px;
+        
+font-family: 'Young Serif', serif;
+
+    }
+    p{
+        font-size: 30px;
+    }
+    button{
+    display: flex;
+
+    padding: 3px 30px;
+    background-color: #702d2d;
+box-shadow: 0px 5px 8px;
+border-radius: 10px;
+}
+button a{
+    font-size: 30px;
+text-decoration: none;
+color: white;
+font-weight: 900;
+
+}
+button a i {
+    padding-right: 5px;
+    color: yellow;
+}
+#back-to-top-btn{
+   
+display: block;
+color: white;
+background-color: blue;
+font-size: 20px;
+box-shadow: 0px 5px 8px;
+}
+#back-to-top-btn i{
+    padding-left: 5px;
+}
+img{
+    margin: auto;
+display: block;
+height: 300px;
+width: 80%;
+border: 4px solid black;
+border-radius: 50px 0px;
+box-shadow: 2px 3px;
+}
+.foot{
+        display: flex;
+  justify-content: space-between;
+    }
+    #nextPageButton{
+        font-size: 30px;
+ 
+  color: white;
+  font-weight: 900; 
+    }
+    #nextPageButton i{
+        padding: 2px;
+        margin: 3px 0px 0px 6px;
+        color: aqua;
+    }
+    #previousPageButton{
+        font-size: 30px;
+ 
+ color: white;
+ font-weight: 900;
+    }
+    #previousPageButton i{
+        margin: 6px 5px 0px 0px;
+        color: aqua; 
+    }
+</style>
+</head>
+<body>
+<button><a href="Stockbulls.html"><i class="fa-solid fa-house"></i>Home</a></button>
+<h1>What is Trading Account: Features & Benefits</h1>
+<img src="tradingacimg.jpg" alt="">
+<strong>What is a Trading Account?</strong>
+<p>A trading account is an interface that allows buying and selling of shares.<br>
+    It acts as an interface between the investors’ bank and Demat accounts.<br>
+    Shares purchased through this account are credited to one’s Demat account.<br>
+    Sold shares are debited from the Demat account and sales proceeds are credited to the bank account.<br>
+    There is no restriction on the number of Demat accounts that an individual can avail.</p><hr>
+    <strong>Features of Trading Account</strong>
+    <p>
+        Buy or sell shares either on the phone or online<br>
+        Expert recommendations allow investors to access the best performers in various categories.<br>
+        Regular market updates and free news alerts on successfully opening an online trading account.<br>
+        Using the margin investing option, investors can increase their exposure on various shares.<br>
+        A high-speed trading platform allows trading in the stock markets in real time without any delays to maximize profits.<br>
+        Orders can be placed during after-market hours using special facilities.<br>
+        Expert research advice can be availed from an experienced team of analysts.  
+    </p><hr>
+    <strong>Benifits of Trading Account</strong>
+    <p>
+        It is easy to set up and offers telephonic and online access. An investor does not need to carry physical transactions in order to buy/sell securities.<br>
+        It shows the relation between gross profit and sale. This helps to measure an investor’s profitability position.<br>
+        It also reflects the ratio between costs of goods sold and gross profits. 
+    </p><hr>
+    <strong>Selecting the Best Trading account in India</strong>
+    <p>
+        Based on the transaction frequency, a reliable platform that provides cost efficient and affordable service charges should be considered.<br>
+A service provider that offers a complete and comprehensive solution to meet various needs for trading on the equity markets should be chosen.<br>
+Consider long-term requirements beforehand, because most transactions, such as transfer from one Demat account, are chargeable.<br>
+The best trading account in India will provide advanced technology platforms to provide access anytime, anywhere. Moreover, there will be almost no downtime, which could restrict trading capabilities.<br>
+Working with a service provider that offers reliable and efficient services is crucial to ensure that one can trade without any trouble. In addition, the customer servicing executives of the chosen service provider must be trained and able to provide quick and effective solutions to any issues that may crop up.
+    </p><hr>
+    <strong>Procedures to Open a Trading Account online</strong>
+    <p>The first step involved in opening a trading account is selecting a SEBI-registered stockbroker. A broker with a valid registration number that is issued by SEBI is necessary to open a Demat accounts. Angel One offers Demat and Trading account to eager traders, to know more about how to open trading account with Angel One, Click here</p>
+    <p>In order to open a trading account, an individual has to submit a ‘Client Registration Form’ and other documents as prescribed by SEBI - the regulator for the securities market in India. An Account Opening form and Know Your Client (KYC) documents must be submitted along with the investor’s identity and address proofs.</p>
+    <p>The details will then be verified through a phone call or an in-house visit.</p>
+    <p>After verification, the account will be processed and the investor will receive his account details</p><hr>
+    <div class="foot">
+        <button id="previousPageButton"><i class="fa-solid fa-backward"></i>PREVIOUS</button>
+        <button id="back-to-top-btn">Back to Top<i class="fa-solid fa-arrow-up"></i></button>
+        <button id="nextPageButton">NEXT<i class="fa-solid fa-forward"></i></button></div>
+<script>
+      // Get the button element
+const btn = document.getElementById("back-to-top-btn");
+
+// Add a click event listener to scroll to the top when the button is clicked
+btn.addEventListener("click", () => {
+// Scroll to the top of the document
+window.scrollTo({
+top: 0,
+behavior: "smooth" // Smooth scrolling animation
+});
+})
+// Get a reference to the button element
+var nextPageButton = document.getElementById("nextPageButton");
+
+// Add a click event listener to the button
+nextPageButton.addEventListener("click", function() {
+  // Set the URL of the next page
+  var nextPageURL = "depository.html"; // Replace with the URL of your next page
+  // Redirect to the next page
+  window.location.href = nextPageURL;
+});
+
+ //previous page button
+ var previousPageButton = document.getElementById("previousPageButton");
+  
+ previousPageButton.addEventListener("click", function() {
+    var previousPageURL = "demat.html";
+    window.location.href = previousPageURL;
+ });
+</script>
+</body>
+</html>

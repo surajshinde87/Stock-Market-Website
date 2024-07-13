@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>StockBulls.com</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Young+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+        h1{
+            text-align: center;
+            font-family: 'Black Ops One', cursive;
+            border-bottom: 5px dashed blue;
+        }
+        strong{
+            font-size: 40px;
+            
+font-family: 'Young Serif', serif;
+
+        }
+        p{
+            font-size: 30px;
+        }
+        button{
+        display: flex;
+
+        padding: 3px 30px;
+        background-color: #702d2d;
+  box-shadow: 0px 5px 8px;
+  border-radius: 10px;
+    }
+    button a{
+        font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  
+    }
+    button a i {
+        padding-right: 5px;
+        color: yellow;
+    }
+    #back-to-top-btn{
+      
+  display: block;
+  color: white;
+  background-color: blue;
+  font-size: 20px;
+  box-shadow: 0px 5px 8px;
+    }
+    #back-to-top-btn i{
+        padding-left: 5px;
+    }
+    img{
+        margin: auto;
+  display: block;
+  height: 300px;
+  width: 80%;
+  border: 4px solid black;
+  border-radius: 50px 0px;
+  box-shadow: 2px 3px;
+    }
+    .foot{
+        display: flex;
+  justify-content: space-between;
+    }
+    
+    #previousPageButton{
+        font-size: 30px;
+ 
+ color: white;
+ font-weight: 900;
+    }
+    #previousPageButton i{
+        margin: 6px 5px 0px 0px;
+        color: aqua; 
+    }
+    </style>
+</head>
+<body>
+    <button><a href="Stockbulls.html"><i class="fa-solid fa-house"></i>Home</a></button>
+<h1>Fundamental Analysis: Principles, Types, and How to Use It</h1>
+<img src="fundamentalanaimg.jpg" alt=""><hr>
+<strong>What Is Fundamental Analysis?</strong>
+<p>Fundamental analysis (FA) measures a security's intrinsic value by examining related economic and financial factors. Intrinsic value is the value of an investment based on the issuing company's financial situation and current market and economic conditions.
+
+    Fundamental analysts study anything that can affect the security's value, from macroeconomic factors such as the state of the economy and industry conditions to microeconomic factors like the effectiveness of the company's management.</p>
+    <p>The end goal is to determine a number that an investor can compare with a security's current price to see whether the security is undervalued or overvalued by other investors.</p><hr>
+    <strong>Understanding Fundamental Analysis</strong>
+     <p>Fundamental analysis is usually done from a macro to micro perspective to identify securities that are not correctly priced by the market.</p>
+<p>
+    Analysts typically study, in order:
+    <ul>
+        <li>The overall state of the economy</li>
+        <li>The strength of the specific industry</li>
+        <li>The financial performance of the company issuing the stock</li>
+    </ul>
+    This ensures they arrive at a fair market value for the stock.
+</p><hr>
+<strong>Sources for Fundamental Analysis</strong>
+<p>Fundamental analysis uses publicly available financial data to evaluate the value of an investment. The data is recorded on financial statements such as quarterly and annual reports and filings like the 10-Q (quarterly) or 10-K (annual). The 8-K is also informative because public companies must file it any time a reportable event occurs, like an acquisition or upper-level management change.</p>
+<p>For example, you might perform a fundamental analysis of a bond's value by looking at economic factors such as interest rates and the overall state of the economy. Then, you'd evaluate the bond market and use financial data from similar bond issuers. Finally, you'd analyze the financial data from the issuing company, including external factors such as potential changes in its credit rating. You could also read through the 8-K, 10-Q, 10-K, and the issuer's annual reports to find out what they are doing, their goals, or other issues.<br>
+    Fundamental analysis uses a company's revenues, earnings, future growth, return on equity, profit margins, and other data to determine a company's underlying value and potential for future growth.</p><hr>
+    <strong>Intrinsic Value</strong>
+    <p>One of the primary assumptions behind fundamental analysis is that a stock's current price often does not fully reflect the value of the company when compared to publicly available financial data. A second assumption is that the value reflected from the company's fundamental data is more likely to be closer to the true value of the stock. <br>
+        For example, say that a company's stock was trading at $20, and after extensive research on the company, an analyst determines that it ought to be worth $24. Another analyst does equal research but decides it should be worth $26. <br>
+
+Many investors will consider the average of these estimates and assume that the stock's intrinsic value may be near $25. Often investors consider these estimates highly relevant because they want to buy stocks trading at prices significantly below these intrinsic values. <br>
+
+This leads to a third major assumption of fundamental analysis: In the long run, the stock market will reflect the fundamentals. The problem is, no one knows how long "the long run" really is. It could be days or years. <br>
+
+This is what fundamental analysis is all about. By focusing on a particular business, an investor can estimate the intrinsic value of a firm and find opportunities to buy at a discount or sell at a premium. The investment will pay off when the market catches up to the fundamentals.
+    </p><hr>
+
+
+
+    <div class="foot">
+        <button id="previousPageButton"><i class="fa-solid fa-backward"></i>PREVIOUS</button>
+        <button id="back-to-top-btn">Back to Top<i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+<script>
+      // Get the button element
+const btn = document.getElementById("back-to-top-btn");
+
+// Add a click event listener to scroll to the top when the button is clicked
+btn.addEventListener("click", () => {
+// Scroll to the top of the document
+window.scrollTo({
+top: 0,
+behavior: "smooth" // Smooth scrolling animation
+});
+})
+
+ //previous page button
+ var previousPageButton = document.getElementById("previousPageButton");
+  
+ previousPageButton.addEventListener("click", function() {
+    var previousPageURL = "technical.html";
+    window.location.href = previousPageURL;
+ });
+</script>
+</body>
+</html>
